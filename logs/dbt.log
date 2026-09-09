@@ -1,0 +1,263 @@
+[0m21:33:08.827501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CDCD1D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CDCD20F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CDCD0E90>]}
+
+
+============================== 21:33:08.959607 | cb90ddf9-6d8d-44c0-8aae-6846ac33928c ==============================
+[0m21:33:08.959607 [info ] [MainThread]: Running with dbt=1.12.4
+[0m21:33:08.961114 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m21:35:17.194093 [debug] [MainThread]: Starter project path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\include\starter_project
+[0m21:35:17.352720 [info ] [MainThread]: Setting up your profile.
+[0m21:36:23.150724 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:36:23.153823 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:36:23.154822 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:54:55.702479 [info ] [MainThread]: Profile aws_dbt_snowflake_project written to C:\Users\selva\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m21:54:56.141120 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m21:54:56.152776 [info ] [MainThread]: dbt version: 1.12.4
+[0m21:54:56.153868 [info ] [MainThread]: python version: 3.12.6
+[0m21:54:56.156037 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m21:54:56.158088 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:54:56.493599 [info ] [MainThread]: Using profiles dir at C:\Users\selva\.dbt
+[0m21:54:56.496157 [info ] [MainThread]: Using profiles.yml file at C:\Users\selva\.dbt\profiles.yml
+[0m21:54:56.497152 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\aws_dbt_snowflake_project\dbt_project.yml
+[0m21:54:56.503673 [info ] [MainThread]: adapter type: snowflake
+[0m21:54:56.505692 [info ] [MainThread]: adapter version: 1.12.0
+[0m21:54:56.821518 [info ] [MainThread]: Configuration:
+[0m21:54:56.823613 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:54:56.825633 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:54:56.827702 [info ] [MainThread]: Required dependencies:
+[0m21:54:56.828715 [debug] [MainThread]: Executing "git --help"
+[0m21:54:57.021113 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:54:57.023149 [debug] [MainThread]: STDERR: "b''"
+[0m21:54:57.024684 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:54:57.026104 [info ] [MainThread]: Connection:
+[0m21:54:57.028115 [info ] [MainThread]:   account: YSOSIJM-OV25054
+[0m21:54:57.028628 [info ] [MainThread]:   user: SK101
+[0m21:54:57.028628 [info ] [MainThread]:   database: AIRBNB
+[0m21:54:57.029668 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m21:54:57.030686 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m21:54:57.031692 [info ] [MainThread]:   schema: dbt_schema
+[0m21:54:57.033757 [info ] [MainThread]:   authenticator: None
+[0m21:54:57.033757 [info ] [MainThread]:   oauth_client_id: None
+[0m21:54:57.035220 [info ] [MainThread]:   query_tag: None
+[0m21:54:57.035220 [info ] [MainThread]:   client_session_keep_alive: False
+[0m21:54:57.036738 [info ] [MainThread]:   host: None
+[0m21:54:57.037759 [info ] [MainThread]:   port: None
+[0m21:54:57.038756 [info ] [MainThread]:   proxy_host: None
+[0m21:54:57.039757 [info ] [MainThread]:   proxy_port: None
+[0m21:54:57.040768 [info ] [MainThread]:   protocol: None
+[0m21:54:57.043720 [info ] [MainThread]:   connect_retries: 1
+[0m21:54:57.047301 [info ] [MainThread]:   connect_timeout: None
+[0m21:54:57.049292 [info ] [MainThread]:   retry_on_database_errors: False
+[0m21:54:57.050290 [info ] [MainThread]:   retry_all: False
+[0m21:54:57.051289 [info ] [MainThread]:   insecure_mode: False
+[0m21:54:57.052800 [info ] [MainThread]:   reuse_connections: True
+[0m21:54:57.053816 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m21:54:57.055114 [info ] [MainThread]:   workload_identity_provider: None
+[0m21:54:57.056129 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m21:54:57.057655 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m21:54:57.065758 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m21:55:00.801870 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m21:55:00.975872 [debug] [MainThread]: Using snowflake connection "debug"
+[0m21:55:00.976944 [debug] [MainThread]: On debug: select 1 as id
+[0m21:55:00.978051 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:55:00.988309 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m21:55:00.990324 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m21:55:00.994161 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:55:00.998593 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:55:01.000124 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  [Errno 22] Invalid argument: '"C:\\Users\\selva\\rsa_key.p8"'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:55:01.005683 [info ] [MainThread]: Your new dbt project "aws_dbt_snowflake_project" was created!
+Initialized new project in C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\aws_dbt_snowflake_project\aws_dbt_snowflake_project
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:55:01.008217 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m21:55:01.062003 [debug] [MainThread]: Command `dbt init` succeeded at 21:55:01.054033 after 1312.73 seconds
+[0m21:55:01.066611 [debug] [MainThread]: Connection 'debug' was left open.
+[0m21:55:01.067574 [debug] [MainThread]: On debug: No close available on handle
+[0m21:55:01.071146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CD594FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CBDEBFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000249CE0DE9C0>]}
+[0m21:55:01.074691 [debug] [MainThread]: Flushing usage events
+[0m21:55:02.805341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:57:05.635006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE6D4B860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE6D4B6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE6D4AF00>]}
+
+
+============================== 21:57:05.646557 | 433fc491-a6c9-44b5-a187-f021f6c6c8e9 ==============================
+[0m21:57:05.646557 [info ] [MainThread]: Running with dbt=1.12.4
+[0m21:57:05.648559 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m21:57:05.736901 [info ] [MainThread]: dbt version: 1.12.4
+[0m21:57:05.737904 [info ] [MainThread]: python version: 3.12.6
+[0m21:57:05.738897 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m21:57:05.740721 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:57:07.384442 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:57:07.385438 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:57:07.386438 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:57:07.955890 [info ] [MainThread]: Using profiles dir at C:\Users\selva\.dbt
+[0m21:57:07.957407 [info ] [MainThread]: Using profiles.yml file at C:\Users\selva\.dbt\profiles.yml
+[0m21:57:07.958429 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\dbt_project.yml
+[0m21:57:07.959451 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m21:57:07.961444 [debug] [MainThread]: Command `dbt debug` failed at 21:57:07.961444 after 2.79 seconds
+[0m21:57:07.962443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE4D83A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE83223C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCE7166900>]}
+[0m21:57:07.963441 [debug] [MainThread]: Flushing usage events
+[0m21:57:09.442922 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:59:41.420313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002901E1CC560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002901B83F3B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002901ED20F80>]}
+
+
+============================== 21:59:41.432417 | eaeb91d9-3d3f-49e5-ab71-0084a179afce ==============================
+[0m21:59:41.432417 [info ] [MainThread]: Running with dbt=1.12.4
+[0m21:59:41.433906 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m21:59:41.510553 [info ] [MainThread]: dbt version: 1.12.4
+[0m21:59:41.511554 [info ] [MainThread]: python version: 3.12.6
+[0m21:59:41.513559 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m21:59:41.514550 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m21:59:43.121152 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:59:43.123148 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:59:43.124676 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:59:43.684149 [info ] [MainThread]: Using profiles dir at C:\Users\selva\.dbt
+[0m21:59:43.685147 [info ] [MainThread]: Using profiles.yml file at C:\Users\selva\.dbt\profiles.yml
+[0m21:59:43.686149 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\dbt_project.yml
+[0m21:59:43.686149 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m21:59:43.689155 [debug] [MainThread]: Command `dbt debug` failed at 21:59:43.688149 after 2.61 seconds
+[0m21:59:43.689155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029020843800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029021145E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029021BB6900>]}
+[0m21:59:43.690677 [debug] [MainThread]: Flushing usage events
+[0m21:59:45.246409 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:10:25.496415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C1371BF020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C139551100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C139553C80>]}
+
+
+============================== 22:10:25.511628 | 9f1424c4-6521-48c2-8248-c10922546c3b ==============================
+[0m22:10:25.511628 [info ] [MainThread]: Running with dbt=1.12.4
+[0m22:10:25.512644 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m22:10:25.627496 [info ] [MainThread]: dbt version: 1.12.4
+[0m22:10:25.628802 [info ] [MainThread]: python version: 3.12.6
+[0m22:10:25.628802 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m22:10:25.630309 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:10:28.169815 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:10:28.172422 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:10:28.173941 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:10:29.197072 [info ] [MainThread]: Using profiles dir at C:\Users\selva\.dbt
+[0m22:10:29.198080 [info ] [MainThread]: Using profiles.yml file at C:\Users\selva\.dbt\profiles.yml
+[0m22:10:29.199079 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\dbt_project.yml
+[0m22:10:29.200587 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m22:10:29.204605 [debug] [MainThread]: Command `dbt debug` failed at 22:10:29.203603 after 4.18 seconds
+[0m22:10:29.205606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C1371BF020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C13CADBEF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C13D0174D0>]}
+[0m22:10:29.208139 [debug] [MainThread]: Flushing usage events
+[0m22:10:30.928422 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:14:55.368091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDD9AFB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDDDF0770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CDBA06A80>]}
+
+
+============================== 22:14:55.379142 | 0b6d506c-c78e-4351-b7ad-88c1e455948d ==============================
+[0m22:14:55.379142 [info ] [MainThread]: Running with dbt=1.12.4
+[0m22:14:55.381456 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m22:14:55.468611 [info ] [MainThread]: dbt version: 1.12.4
+[0m22:14:55.469613 [info ] [MainThread]: python version: 3.12.6
+[0m22:14:55.470605 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m22:14:55.471604 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:14:57.447544 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:14:57.449547 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:14:57.450538 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:14:58.131993 [info ] [MainThread]: Using profiles dir at C:\Users\selva\.dbt
+[0m22:14:58.132994 [info ] [MainThread]: Using profiles.yml file at C:\Users\selva\.dbt\profiles.yml
+[0m22:14:58.133996 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\dbt_project.yml
+[0m22:14:58.134994 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m22:14:58.139009 [debug] [MainThread]: Command `dbt debug` failed at 22:14:58.138009 after 3.13 seconds
+[0m22:14:58.139009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CE1286540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CE0C63A40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017CE0F2BE00>]}
+[0m22:14:58.140522 [debug] [MainThread]: Flushing usage events
+[0m22:14:59.720726 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:23:16.445526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACDADD8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACDB99DD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACDD7793D0>]}
+
+
+============================== 22:23:16.459111 | e8172565-d234-4641-bc7c-c9f39040e01b ==============================
+[0m22:23:16.459111 [info ] [MainThread]: Running with dbt=1.12.4
+[0m22:23:16.462107 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m22:23:16.567401 [info ] [MainThread]: dbt version: 1.12.4
+[0m22:23:16.568401 [info ] [MainThread]: python version: 3.12.6
+[0m22:23:16.569403 [info ] [MainThread]: python path: C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Scripts\python.exe
+[0m22:23:16.571403 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m22:23:18.592078 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m22:23:18.594097 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m22:23:18.595097 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m22:23:18.680687 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+module 'agate' has no attribute 'DateTime'
+[0m22:23:19.327819 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 198, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\requires.py", line 144, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\cli\main.py", line 440, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\config\profile.py", line 404, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\config\profile.py", line 370, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\config\profile.py", line 326, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\config\profile.py", line 150, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\selva\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 6, in <module>
+    from dbt.adapters.snowflake.impl import SnowflakeAdapter
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\adapters\snowflake\impl.py", line 109, in <module>
+    class SnowflakeAdapter(SQLAdapter):
+  File "C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\.venv\Lib\site-packages\dbt\adapters\snowflake\impl.py", line 368, in SnowflakeAdapter
+    "created_on": agate.DateTime(),
+                  ^^^^^^^^^^^^^^
+AttributeError: module 'agate' has no attribute 'DateTime'
+
+[0m22:23:19.333485 [debug] [MainThread]: Command `dbt debug` failed at 22:23:19.332965 after 3.32 seconds
+[0m22:23:19.334499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACDADD8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACE03EF170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACE0244D40>]}
+[0m22:23:19.335497 [debug] [MainThread]: Flushing usage events
+[0m22:23:21.172169 [debug] [MainThread]: An error was encountered while trying to flush usage events
