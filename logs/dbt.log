@@ -261,3 +261,18 @@ AttributeError: module 'agate' has no attribute 'DateTime'
 [0m22:23:19.334499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACDADD8200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACE03EF170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002ACE0244D40>]}
 [0m22:23:19.335497 [debug] [MainThread]: Flushing usage events
 [0m22:23:21.172169 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:38:23.832327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024652BC3410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024652B53850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024652B53050>]}
+
+
+============================== 23:38:23.851954 | 8c362db6-7d3d-4fda-9369-419625690b46 ==============================
+[0m23:38:23.851954 [info ] [MainThread]: Running with dbt=1.11.13
+[0m23:38:23.855325 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\selva\\.dbt', 'invocation_command': 'dbt run --select models/demo', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m23:38:23.859482 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\selva\OneDrive\Desktop\Data\Projects\DBT_Snowflake\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:38:23.866162 [debug] [MainThread]: Command `dbt run` failed at 23:38:23.866162 after 0.47 seconds
+[0m23:38:23.870141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024652C247D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024652C25D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002464BEF4590>]}
+[0m23:38:23.872661 [debug] [MainThread]: Flushing usage events
+[0m23:38:24.934699 [debug] [MainThread]: An error was encountered while trying to flush usage events
