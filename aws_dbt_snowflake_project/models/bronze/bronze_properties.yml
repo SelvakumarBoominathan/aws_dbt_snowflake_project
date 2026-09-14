@@ -3,21 +3,12 @@ version: 2
 models:
   - name: bronze_bookings
     config:
-      materialized: incremental
-      on_schema_change: append_new_columns
-      unique_key: booking_id
-      incremental_strategy: merge
+      materialized: view
 
   - name: bronze_hosts
     config:
-      materialized: incremental
-      on_schema_change: append_new_columns
-      unique_key: host_id
-      incremental_strategy: merge
+      materialized: view
 
   - name: bronze_listings
     config:
-      materialized: incremental
-      on_schema_change: append_new_columns
-      unique_key: listing_id
-      incremental_strategy: merge
+      materialized: view
