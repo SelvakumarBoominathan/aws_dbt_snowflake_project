@@ -7,6 +7,11 @@ models:
       on_schema_change: append_new_columns
       unique_key: booking_id
       incremental_strategy: merge
+    columns:
+      - name: booking_id
+        tests:
+          - not_null
+          - unique
 
   - name: silver_hosts
     config:
@@ -14,6 +19,11 @@ models:
       on_schema_change: append_new_columns
       unique_key: host_id
       incremental_strategy: merge
+    columns:
+      - name: host_id
+        tests:
+          - not_null
+          - unique
 
   - name: silver_listings
     config:
@@ -21,3 +31,8 @@ models:
       on_schema_change: append_new_columns
       unique_key: listing_id
       incremental_strategy: merge
+    columns:
+      - name: listing_id
+        tests:
+          - not_null
+          - unique

@@ -1,5 +1,11 @@
 SELECT * FROM {{ source('staging', 'hosts') }}
 
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY host_id
+    ORDER BY created_at DESC
+) = 1
+
+
 {# {% if is_incremental() %}
     {% set incremental_column = 'CREATED_AT' %}
     WHERE {{ incremental_column }} > (SELECT COALESCE( MAX({{ incremental_column }}),'1900-01-01') FROM {{ this }})

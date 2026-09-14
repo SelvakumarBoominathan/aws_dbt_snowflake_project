@@ -1,3 +1,3 @@
 
 
-SELECT * FROM {{ ref('bronze_bookings')}}
+SELECT COUNT(DISTINCT(HOST_ID)) FROM {{ ref('bronze_hosts')}}

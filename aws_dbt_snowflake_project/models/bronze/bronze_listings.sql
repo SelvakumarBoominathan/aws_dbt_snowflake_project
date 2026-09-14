@@ -1,5 +1,9 @@
 SELECT * FROM {{ source('staging', 'listings') }}
 
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY listing_id
+    ORDER BY created_at DESC
+) = 1
 
 {# {% if is_incremental() %}
   {% set incremental_column = 'CREATED_AT' %}

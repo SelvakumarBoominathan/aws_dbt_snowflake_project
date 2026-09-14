@@ -8,9 +8,15 @@ SELECT
 FROM
     {{ref('bronze_bookings')}}
 
-{% if is_incremental() %}                   
-        -- Only fetch rows newer than what is already stored in this Silver table
-    WHERE CREATED_AT > (SELECT COALESCE(MAX(CREATED_AT), '1900-01-01') FROM {{ this }})
+
+{% if is_incremental() %}
+    {% set incremental_column = 'CREATED_AT' %}                
+    WHERE {{incremental_column}} > (SELECT COALESCE(MAX({{incremental_column}}), '1900-01-01') FROM {{ this }})
 {% endif %}
 
+
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY booking_id
+    ORDER BY created_at DESC
+) = 1
 

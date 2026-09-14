@@ -2,13 +2,34 @@ version: 2
 
 models:
   - name: bronze_bookings
+    description: "Bronze view for raw bookings data with cleaned schema"
     config:
       materialized: view
+    columns:
+      - name: booking_id
+        description: "Primary key for booking records"
+        tests:
+          - not_null
+          - unique
 
   - name: bronze_hosts
+    description: "Bronze view for raw hosts data with cleaned schema"
     config:
       materialized: view
+    columns:
+      - name: host_id
+        description: "Primary key for hosts records"
+        tests:
+          - not_null
+          - unique
 
   - name: bronze_listings
+    description: "Bronze view for raw listings data with cleaned schema"
     config:
       materialized: view
+    columns:
+      - name: listing_id
+        description: "Primary key for listings records"
+        tests:
+          - not_null
+          - unique

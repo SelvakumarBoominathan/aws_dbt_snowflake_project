@@ -2,6 +2,12 @@ SELECT * FROM {{ source('staging', 'bookings')}}
 
 
 
+QUALIFY ROW_NUMBER() OVER (
+    PARTITION BY booking_id
+    ORDER BY created_at DESC
+) = 1
+
+
 
 
 

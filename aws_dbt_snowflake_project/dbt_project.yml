@@ -34,5 +34,5 @@ models:
       +materialized: view
       +schema: bronze
     silver:
-      +materialized: table
+      +materialized: incremental
       +schema: silver
