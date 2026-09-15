@@ -190,6 +190,22 @@ dbt docs generate --profiles-dir .
 dbt docs serve --profiles-dir .
 ```
 
+## Snowflake Commands
+
+# DDL Commands
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+# Storage Integration (AWS S3 Bucket) & Ingestion
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+
+# Key Pair Authentication setup (IAM USER)
+
+![alt text](image-4.png)
+
 ## Security and Configuration
 
 Do not commit passwords, private keys, tokens, or production credentials. Keep local credentials outside the repository where possible and use environment variables or a secure secrets manager for shared and production environments.
