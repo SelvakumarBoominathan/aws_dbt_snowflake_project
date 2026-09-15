@@ -1,3 +1,4 @@
 
 
-SELECT * FROM {{ ref('silver_listings')}}
+SELECT * FROM {{ ref('obt')}}
+LIMIT 5
