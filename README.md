@@ -1,6 +1,6 @@
 # Airbnb Analytics Platform with dbt and Snowflake
 
-~An analytics engineering project that transforms Airbnb booking, listing, and host data in Snowflake using dbt.~
+An analytics engineering project that transforms Airbnb booking, listing, and host data in Snowflake using dbt.
 
 The project demonstrates a layered warehouse design, incremental processing, deduplication, reusable Jinja macros, data quality tests, snapshots for history, and curated analytical outputs.
 
