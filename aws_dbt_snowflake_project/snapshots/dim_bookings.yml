@@ -1,7 +1,7 @@
 snapshots:
   - name: dim_bookings
     relation: ref('bookings')
-    description: ephemeral model from gold layer
+    description: ephemeral model for bookings table from gold layer.
     config:
       database: AIRBNB
       schema: gold
