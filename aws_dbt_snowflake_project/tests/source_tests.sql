@@ -7,4 +7,4 @@ SELECT
 FROM 
       {{ source('staging', 'bookings')}}
 WHERE 
-      BOOKING_AMOUNT < 200
+      BOOKING_AMOUNT <= 0 
