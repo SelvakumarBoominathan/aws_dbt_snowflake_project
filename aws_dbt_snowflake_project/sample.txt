@@ -1,0 +1,35 @@
+    prod:
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      database: "AIRBNB_PROD"
+      # private_key_passphrase: " "
+      private_key_path: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PATH') }}"
+      role: "{{ env_var('SNOWFLAKE_PROD_ROLE', 'TRANSFORMER_PROD') }}"
+      schema: "ANALYTICS"
+      threads: 1
+      type: snowflake
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_PROD_WAREHOUSE', 'PROD_WH') }}"
+
+
+
+
+
+
+.env contents
+
+DBT_TARGET= dev
+
+SNOWFLAKE_ACCOUNT=YSOSIJM-OV25054
+SNOWFLAKE_USER=SK101
+SNOWFLAKE_ROLE=ACCOUNTADMIN
+SNOWFLAKE_WAREHOUSE=COMPUTE_WH
+SNOWFLAKE_DATABASE=AIRBNB
+SNOWFLAKE_SCHEMA=dbt_schema
+SNOWFLAKE_PRIVATE_KEY_PATH=C:/Users/selva/rsa_key.p8
+
+
+
+
+dbt debug --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project
+dbt run --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project
+dbt test --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project
