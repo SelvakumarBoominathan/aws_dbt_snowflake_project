@@ -1,1 +1,3 @@
-4:36:00
+dbt debug --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project
+dbt run --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project
+dbt test --project-dir .\aws_dbt_snowflake_project --profiles-dir .\aws_dbt_snowflake_project

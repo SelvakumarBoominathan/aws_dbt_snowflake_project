@@ -5,3 +5,4 @@ logs/
 .env
 profiles.yml
 dbt_internal_packages/
+sample.txt
