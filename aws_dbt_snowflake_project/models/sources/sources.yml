@@ -2,11 +2,18 @@ sources:
   - name: staging
     database: AIRBNB
     schema: STAGING
+    description: "Raw Airbnb data ingested from external bucket"
     config:
       enabled: true
     tables:
       - name: listings
+        identifier: listings
+        description: "Raw Airbnb listings data ingested from external bucket"
 
       - name: hosts
+        identifier: hosts
+        description: "Raw Airbnb hosts data ingested from external bucket"
 
       - name: bookings
+        identifier: bookings
+        description: "Raw Airbnb bookings data ingested from external bucket"
