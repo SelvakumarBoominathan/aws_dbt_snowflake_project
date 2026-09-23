@@ -8,8 +8,8 @@ sources:
       freshness:
         warn_after:
           count: 3
-          period: DAY
-        loaded_at_field: CREATED_AT
+          period: day
+      loaded_at_field: CREATED_AT
     tables:
       - name: listings
         identifier: listings
