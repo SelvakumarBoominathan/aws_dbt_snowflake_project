@@ -5,6 +5,11 @@ sources:
     description: "Raw Airbnb data ingested from external bucket"
     config:
       enabled: true
+      freshness:
+        warn_after:
+          count: 3
+          period: day
+      loaded_at_field: CREATED_AT
     tables:
       - name: listings
         identifier: listings
