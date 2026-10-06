@@ -39,3 +39,7 @@ models:
     gold:
       +materialized: table
       +schema: gold
+
+seeds:
+  aws_dbt_snowflake_project:
+    +schema: raw

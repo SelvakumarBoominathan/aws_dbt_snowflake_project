@@ -30,6 +30,6 @@ models:
     columns:
       - name: listing_id
         description: "Primary key for listings records"
-        tests:
+        data_tests:
           - not_null
           - unique
